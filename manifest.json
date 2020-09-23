@@ -1,14 +1,14 @@
 {
 
     "manifest_version": 2,
-    "name": "cf-status",
-    "version": "1.0",
+    "name": "cf-helper",
+    "version": "2.0",
   
-    "description": "adds widget for redirecting to cf problems status",
+    "description": "enables extra features on codefoces.com",
   
     "content_scripts": [
       {
-        "matches": ["*://*.codeforces.com/problemset/problem/*"],
+        "matches": ["*://*.codeforces.com/*","*://*.atcoder.jp/contests/*"],
         "js": ["main.js"]
       }
     ]
