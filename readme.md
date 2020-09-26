@@ -5,7 +5,7 @@ Go to [link](https://addons.mozilla.org/en-US/firefox/addon/cf-helper/) and inst
 
 #### Chrome:
 ##### Note:
-Since chrome extensions require developer account which are not free to register you need to load extension from browser
+Since chrome extensions require developer account which is not free to register you need to load extension from browser
 
 1. Clone this repository
 `git clone https://github.com/sainad2222/cf-helper.git`
