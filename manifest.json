@@ -8,7 +8,7 @@
   
     "content_scripts": [
       {
-        "matches": ["*://*.codeforces.com/*","*://*.atcoder.jp/contests/*","*://*.codechef.com/*/problems/*","*://*.codechef.com/problems/*",],
+        "matches": ["*://*.codeforces.com/*","*://*.atcoder.jp/contests/*","*://*.codechef.com/*/problems/*","*://*.codechef.com/problems/*"],
         "js": ["main.js"]
       }
     ]
