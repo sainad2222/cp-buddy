@@ -214,6 +214,54 @@ function navbar() {
     
 }
 
+function copybutton(){
+	let styleSheet = `
+.copyBtn {
+    background-color: '#add8e6';
+    padding: 5px;
+    font-size: 12px;
+}
+`;
+
+let s = document.createElement('style');
+s.type = "text/css";
+s.innerHTML = styleSheet;
+(document.head || document.documentElement).appendChild(s);
+
+window.addEventListener('load', function() {
+    'use strict';
+
+    function copy(ele) {
+        let temp = document.createElement('textarea');
+        document.body.appendChild(temp);
+        temp.value = ele.innerText;
+        temp.select();
+        document.execCommand('copy');
+        temp.remove();
+    }
+
+    function addCopyBtn(ele) {
+        let btn = document.createElement("button");
+        btn.innerHTML = "Copy";
+        btn.className = "copyBtn";
+        btn.onclick = () => {
+            copy(ele.lastChild);
+        }
+
+        ele.insertBefore(document.createElement('br'), ele.childNodes[0]);
+        ele.insertBefore(btn, ele.childNodes[0]);
+    }
+
+    let preTags = document.getElementsByTagName("pre");
+
+    console.log(preTags);
+
+    for (let preTag of preTags) {
+        addCopyBtn(preTag);
+    }
+});
+}
+
 
 
 if (location.href.match(/^https:\/\/codeforces\.com\/problemset\/problem\//)) {
@@ -224,4 +272,7 @@ if (location.href.match(/^https:\/\/codeforces\.com\/contest\//) || location.hre
 }
 if (location.href.match(/^https:\/\/codeforces\.com\/contest\//)) {
     standings();
+}
+if (location.href.match(/^https:\/\/www\.codechef\.com\/*\/problems\//) || location.href.match(/^https:\/\/www\.codechef\.com\/problems\//)) {
+    navbar();
 }
