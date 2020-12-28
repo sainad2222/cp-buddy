@@ -2,13 +2,13 @@
 
     "manifest_version": 2,
     "name": "cf-helper",
-    "version": "2.1",
+    "version": "2.2",
   
     "description": "enables extra features on codefoces.com",
   
     "content_scripts": [
       {
-        "matches": ["*://*.codeforces.com/*","*://*.atcoder.jp/contests/*"],
+        "matches": ["*://*.codeforces.com/*","*://*.atcoder.jp/contests/*","*://*.codechef.com/*/problems/*","*://*.codechef.com/problems/*",],
         "js": ["main.js"]
       }
     ]
