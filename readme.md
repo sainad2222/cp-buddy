@@ -24,3 +24,5 @@ Since chrome extensions require developer account which is not free to register 
 2. *Colorizes* standings in contests by used programming languages([code](https://codeforces.com/blog/entry/1871)(by yak_ex))
 
 3. *Navbar* of tasks/problems for codeforces and atcoder ([script](https://greasyfork.org/en/scripts/383360-atcoder-problem-navigator)(by yoshrc))
+
+4. Copy button in codechef(by nikhilksingh97 aka Indian Pythonista)
