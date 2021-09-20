@@ -1,7 +1,7 @@
 ### Installation:
 
 #### Firefox:
-Go to [link](https://addons.mozilla.org/en-US/firefox/addon/cf-helper/) and install addon
+Go to [link](https://addons.mozilla.org/en-US/firefox/addon/cp-buddy/) and install addon
 
 #### Chrome:
 ##### Note:
